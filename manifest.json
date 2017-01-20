@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Schedule To Image",
+  "version": "0.1",
+
+  "content_scripts": [{
+    "matches": ["https://www.eway.in.ua/*"],
+    "js": ["content.js", "schedule-to-image.js", "html2canvas.js"]
+  }],
+
+  "browser_action": {
+    "default_title": "Графики"
+  },
+
+  "permissions": ["https://www.eway.in.ua/*"]
+}
